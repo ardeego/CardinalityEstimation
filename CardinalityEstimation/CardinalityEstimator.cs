@@ -336,10 +336,6 @@ namespace CardinalityEstimation
                 if (this.directCount != null)
                 {
                     this.directCount.UnionWith(other.directCount);
-                    if (this.directCount.Count > DirectCounterMaxElements)
-                    {
-                        this.directCount = null;
-                    }
                 }
             }
             else
